@@ -32,6 +32,7 @@ function load_ics(ics_data) {
   });
   $("#calendar").fullCalendar("removeEventSources");
   $("#calendar").fullCalendar("addEventSource", events);
+  $('#calendar').fullCalendar("option", "timezone", "local");
 }
 
 function createShareUrl(feed, cors, title, file) {
