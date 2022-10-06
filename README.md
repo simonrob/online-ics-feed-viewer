@@ -1,7 +1,7 @@
 # Online ICS feed viewer
 [Online demo](https://simonrob.github.io/online-ics-feed-viewer/)
 
-_Note: this repository contains a very minor update simply to make events display in the local timezone, and a tiny bit of readme formatting. All other aspects are identical to the [original](https://larrybolt.github.io/online-ics-feed-viewer/)._
+_Note: this repository contains a very minor update simply to make events display in the local timezone, a popup with event details and a tiny bit of readme formatting. All other aspects are essentially identical to the [original](https://larrybolt.github.io/online-ics-feed-viewer/)._
 
 ![Gif demonstrating deployed version](./demo.gif)
 
