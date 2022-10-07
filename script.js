@@ -123,6 +123,7 @@ function loadCalendar() {
   const url_title = URIHash.get("title");
   const url_hideinput = URIHash.get("hideinput") === 'true';
   const url_view = URIHash.get("view");
+  const url_startdate = URIHash.get("startdate");
   console.log({
     url_feed,
     url_file,
@@ -130,6 +131,7 @@ function loadCalendar() {
     url_title,
     url_hideinput,
     url_view,
+    url_startdate
   });
   if (url_title) {
     $("h1").text(url_title);
@@ -151,6 +153,9 @@ function loadCalendar() {
   }
   if (url_view) {
       $('#calendar').fullCalendar("changeView", url_view);
+  }
+  if (url_startdate) {
+      $('#calendar').fullCalendar("gotoDate", url_startdate);
   }
   $('#share input').click(function(){
     if ($("#cors-enabled").is(":checked")) {
